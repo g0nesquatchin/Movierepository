@@ -44,11 +44,13 @@
 }
 
 .movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   margin: 5px 0;
   background-color: #f5f5f5;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .movie-item:hover {
@@ -70,4 +72,90 @@
 .error-message {
   color: red;
   margin: 10px 0;
+}
+
+.add-movie-form {
+  margin: 20px 0;
+}
+
+.add-movie-input {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-movie-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-movie-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+}
+
+.filter-button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.movie-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.watch-button {
+  padding: 5px 10px;
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.watch-button.watched {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.watch-button:hover {
+  opacity: 0.8;
 }
